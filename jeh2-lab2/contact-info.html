@@ -29,7 +29,39 @@
 	</nav>
 
     <div id="content"> <!-- Use div tag with an attribute of an id = content (i.e., this div's unique name) -->
-		
+		<form>
+			<fieldset>
+			<legend>Tell me more about yourself</legend>
+			<!-- Include input fields for name and date of birth here -->
+
+			<label for="name">Name:</label><br>
+			<input type="text" id="name" name="name" value="Your Name" size="20" maxlength="250"><br>
+
+			<label for="birthday">Your date of birth: (required)</label><br>
+			<input type="date" id="birthday" name="birthday"><br>
+			 
+			</fieldset>
+			<fieldset>
+			<legend>Tell me about your preferences</legend>
+			<!-- Include input fields for color and message here -->
+
+			<label for="colour">Your favorite flower color:</label><br>
+			<input type="color" id="colour" name="colour"><br>
+
+			<label for="message">Message:</label><br>
+			<textarea id="message" name="message" rows="10" cols="50" maxlength="1000"></textarea><br>
+			 
+			</fieldset>
+			<fieldset>
+			<legend>Let's stay in touch</legend>
+			<!-- Include inputs of type select, checkbox, email and password here -->
+			 
+			</fieldset>
+			<fieldset>
+			<input type ="image" src="images/submit.png" alt="Submit" name= "btnimage">
+			<!-- <input type="submit" value="Submit"> -->
+			</fieldset>
+			</form>
 	</div> <!-- Close content -->
     
 	<div id="sidebar">
