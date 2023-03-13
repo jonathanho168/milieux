@@ -1,0 +1,26 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif; 
+    /* Set all font in the page to Helvetica with font formating */
+	font-size: 100%; 
+    /* Generally set the font-size to 100% in the body - you can then change with em in the other areas */
+	line-height: 1.7em; 
+     /* The line-height property in CSS controls the space between lines of text. 
+        It is often set in a unitless value (e.g. line-height: 1.4; ) */
+	color: #000000; /* Hex Color Black */
+}
+
+h1 {
+	color: darkred; /* Good contrast color for heading */
+	font-size: 3.75em; /* http://pxtoem.com/ */
+        }
+h2 {
+	font-size: 1.5em;
+	font-weight: 400; 
+    /* sets how thick or thin characters in text should be displayed. */
+}
+h3 {
+	color:darkblue;
+	font-size: 1.25em;
+	font-weight: 400; 
+    /* sets how thick or thin characters in text should be displayed. */
+}

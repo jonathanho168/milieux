@@ -1,0 +1,56 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+<head> <!-- The head is where the title and meta data are contained and not directly seen by the user -->
+	
+    <!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8"> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Your name">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems">
+	<meta name="description" content="Your name professional website">
+    <link rel="stylesheet" type="text/css" href=" css/styles.css">
+	
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Website of Your Name </title>
+
+</head>
+
+<body> <!-- The body is where the main content goes -->
+    
+    <header> <!-- Header is a tag in HTML 5 to organize the header content-->
+		<h1>Your Name</h1>
+		<p>Carnegie Mellon University, Information Systems Program, Dietrich & Heinz</p>
+	</header>
+
+    <nav> <!-- Nav is a tag in HTML 5 to organize navigation items -->
+	    <a href="index.html">My Info</a> | 
+	    <a href="experience.html">My Experience</a> |
+	    <a href="contact-info.html">Contact Me</a>
+	    <!-- These anchor takes us to another page within the website; hence it is called a relative link. -->	
+	</nav>
+
+    <div id="content"> <!-- Use div tag with an attribute of an id = content (i.e., this div's unique name) -->
+		<h2>About Me</h2>
+		<img src="images/photo.png" alt="Photo of Your Name">
+        <div id="bio">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Morbi consequat lacus vel rutrum blandit. Suspendisse ullamcorper commodo ipsum, 
+				vel bibendum nisi condimentum non. Morbi fringilla risus elementum, condimentum velit a, vulputate dolor. 		
+			</p>		
+            <h3>Courses Taken</h3>
+            <ul>
+            	<li>one</li> <!-- Most important course  -->
+           		<li>two</li> <!-- Second most important course  -->
+            	<li>three</li>
+            	<li>four</li>
+            </ul>
+            <a href="myresume.pdf" target="_blank"><strong>My Resume</strong></a>
+        </div><!-- Close bio -->
+	</div> <!-- Close content -->
+	
+    <footer>
+		<hr>
+		&copy; Your Name<br>
+	</footer>
+    
+</body>
+</html>
