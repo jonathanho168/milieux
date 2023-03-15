@@ -49,3 +49,25 @@ a:hover {
 	color: black;
 	text-decoration: wavy;
 }
+
+table, th, td {
+	width: 75%;
+	border: 3px solid;
+	border-color: #075F8A;
+	border-spacing: 3px;
+	margin: auto;
+	table-layout: auto;
+	border-collapse: collapse;
+}
+
+th {
+	height: 40px;
+	font-weight: bold;
+}
+
+th, td {
+	padding: 2px;
+	text-align: center;
+	border: 1px solid;
+	border-color: #333333;
+}
