@@ -15,95 +15,96 @@
 </head>
 
 <body> <!-- The body is where the main content goes -->
-    <div id="top_row">
-		<header> <!-- Header is a tag in HTML 5 to organize the header content-->
-			<h1>Jonathan Ho</h1>
-			<p>Carnegie Mellon University, Information Systems Program, Dietrich & Heinz</p>
-		</header>
+		<div id="container">
+		<div id="top_row">
+			<header> <!-- Header is a tag in HTML 5 to organize the header content-->
+				<h1>Jonathan Ho</h1>
+				<p>Carnegie Mellon University, Information Systems Program, Dietrich & Heinz</p>
+			</header>
 
-		<nav> <!-- Nav is a tag in HTML 5 to organize navigation items -->
-			<a href="index.html">My Info</a> |
-			<a href="experience.html">My Experience</a> |
-			<a href="contact-info.html">Contact Me</a>
-			<!-- These anchor takes us to another page within the website; hence it is called a relative link. -->	
-		</nav>
+			<nav> <!-- Nav is a tag in HTML 5 to organize navigation items -->
+				<a href="index.html">My Info</a> |
+				<a href="experience.html">My Experience</a> |
+				<a href="contact-info.html">Contact Me</a>
+				<!-- These anchor takes us to another page within the website; hence it is called a relative link. -->	
+			</nav>
+		</div>
+
+		<div id="content"> <!-- Use div tag with an attribute of an id = content (i.e., this div's unique name) -->
+			<h2>Contact Me</h2>
+			<p>Please use the below form to get in touch with me</p>
+			<form>
+				<fieldset>
+				<legend>Tell me more about yourself</legend>
+				<!-- Include input fields for name and date of birth here -->
+
+				<label for="name">Name:</label><br>
+				<input type="text" id="name" name="name" value="Your Name" size="20" maxlength="250"><br>
+
+				<label for="birthday">Your date of birth: (required)</label><br>
+				<input type="date" id="birthday" name="birthday"><br>
+				
+				</fieldset>
+				<fieldset>
+				<legend>Tell me about your preferences</legend>
+				<!-- Include input fields for color and message here -->
+
+				<label for="colour">Your favorite flower color:</label><br>
+				<input type="color" id="colour" name="colour"><br>
+
+				<label for="message">Message:</label><br>
+				<textarea id="message" name="message" rows="10" cols="50" maxlength="1000"></textarea><br>
+				
+				</fieldset>
+				<fieldset>
+				<legend>Let's stay in touch</legend>
+				<!-- Include inputs of type select, checkbox, email and password here -->
+
+				<label for="heard">How did you find out about me?</label>
+				<select name="heard" id="heard">
+				<option value="google" selected>Google</option>
+				<option value="news">News article</option>
+				<option value="friend">Friend</option>
+				<option value="other">Other</option>
+				</select><br>
+				
+				<label for="update">Please indicate if you want to receive updates via email:</label><br>
+				<input type="checkbox" id="update" name="update" value="yes">
+				<label for="update">Yes, please update me!</label><br>
+
+				<label for="email">Please provide your email address:</label><br>
+				<input type="text" id="email" name="email" size="20" maxlength="250" placeholder="abc@defg.com" required><br>
+
+				<label for="phone">Please provide your phone number (no dashes or spaces) (required)</label><br>
+				<input type="tel" id="phone" name="phone"><br>
+
+				<label for="pwd">Choose a password:</label><br>
+				<input type="password" id="pwd" name="pwd" maxlength="20"><br>
+
+				</fieldset>
+				<fieldset>
+				<input type ="image" src="images/submit.png" alt="Submit" name= "btnimage">
+				<!-- <input type="submit" value="Submit"> -->
+				</fieldset>
+				</form>
+		</div> <!-- Close content -->
+		
+		<div id="sidebar">
+			<h3>Contact</h3>
+			<strong>Jonathan Ho</strong><br>
+			<a href="http://www.cmu.edu" target="_blank">Carnegie Mellon University</a><br>
+			5000 Forbes Avenue<br>
+			Pittsburgh, PA 15213<br>
+			412-268-0000 (h)<br>
+			412-555-5555 (c)<br><br>
+			<a href="mailto:jeh2@andrew.cmu.edu"><img src="images/email.png" alt="Mail Icon"></a>
+			<a href="https://www.linkedin.com/in/jonathanho168/"><img src="images/linkedin.png" alt="LinkedIn Icon"></a>
+			<a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook Icon"></a>
+		</div>
+
+		<footer>
+			<hr>&copy; Jonathan Ho<br>
+		</footer>
 	</div>
-
-    <div id="content"> <!-- Use div tag with an attribute of an id = content (i.e., this div's unique name) -->
-		<h2>Contact Me</h2>
-		<p>Please use the below form to get in touch with me</p>
-		<form>
-			<fieldset>
-			<legend>Tell me more about yourself</legend>
-			<!-- Include input fields for name and date of birth here -->
-
-			<label for="name">Name:</label><br>
-			<input type="text" id="name" name="name" value="Your Name" size="20" maxlength="250"><br>
-
-			<label for="birthday">Your date of birth: (required)</label><br>
-			<input type="date" id="birthday" name="birthday"><br>
-			 
-			</fieldset>
-			<fieldset>
-			<legend>Tell me about your preferences</legend>
-			<!-- Include input fields for color and message here -->
-
-			<label for="colour">Your favorite flower color:</label><br>
-			<input type="color" id="colour" name="colour"><br>
-
-			<label for="message">Message:</label><br>
-			<textarea id="message" name="message" rows="10" cols="50" maxlength="1000"></textarea><br>
-			 
-			</fieldset>
-			<fieldset>
-			<legend>Let's stay in touch</legend>
-			<!-- Include inputs of type select, checkbox, email and password here -->
-
-			<label for="heard">How did you find out about me?</label>
-			<select name="heard" id="heard">
-			<option value="google" selected>Google</option>
-			<option value="news">News article</option>
-			<option value="friend">Friend</option>
-			<option value="other">Other</option>
-			</select><br>
-			 
-			<label for="update">Please indicate if you want to receive updates via email:</label><br>
-			<input type="checkbox" id="update" name="update" value="yes">
-			<label for="update">Yes, please update me!</label><br>
-
-			<label for="email">Please provide your email address:</label><br>
-			<input type="text" id="email" name="email" size="20" maxlength="250" placeholder="abc@defg.com" required><br>
-
-			<label for="phone">Please provide your phone number (no dashes or spaces) (required)</label><br>
-			<input type="tel" id="phone" name="phone"><br>
-
-			<label for="pwd">Choose a password:</label><br>
-			<input type="password" id="pwd" name="pwd" maxlength="20"><br>
-
-			</fieldset>
-			<fieldset>
-			<input type ="image" src="images/submit.png" alt="Submit" name= "btnimage">
-			<!-- <input type="submit" value="Submit"> -->
-			</fieldset>
-			</form>
-	</div> <!-- Close content -->
-    
-	<div id="sidebar">
-		<h3>Contact</h3>
-        <strong>Jonathan Ho</strong><br>
-        <a href="http://www.cmu.edu" target="_blank">Carnegie Mellon University</a><br>
-        5000 Forbes Avenue<br>
-        Pittsburgh, PA 15213<br>
-        412-268-0000 (h)<br>
-        412-555-5555 (c)<br><br>
-        <a href="mailto:jeh2@andrew.cmu.edu"><img src="images/email.png" alt="Mail Icon"></a>
-        <a href="https://www.linkedin.com/in/jonathanho168/"><img src="images/linkedin.png" alt="LinkedIn Icon"></a>
-        <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook Icon"></a>
-	</div>
-
-	<footer>
-		<hr>&copy; Jonathan Ho<br>
-	</footer>
-	
 </body>
 </html>
