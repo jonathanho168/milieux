@@ -9,7 +9,7 @@ body {
 	color: #000000; /* Hex Color Black */
 }
 
-h1 {
+#top_row h1 {
 	color: darkred; /* Good contrast color for heading */
 	font-size: 3.75em; /* http://pxtoem.com/ */
         }
@@ -23,4 +23,29 @@ h3 {
 	font-size: 1.25em;
 	font-weight: 400; 
     /* sets how thick or thin characters in text should be displayed. */
+}
+
+a {
+	color: #351c75;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0F4970;
+	text-decoration: underline;
+}
+
+#bio {
+	margin-left: 3em;
+	font-size: 0.875em;
+}
+
+#bio a {
+	color: green;
+	text-decoration: dotted;
+}
+
+#bio a:hover {
+	color: black;
+	text-decoration: wavy;
 }
